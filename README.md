@@ -1,2 +1,2 @@
-# django-faicons
-Django model field and helpers for FontAwesome Icons
+# django-faicon
+Django model field and helpers for Font Awesome 5 Icons
