@@ -1,0 +1,8 @@
+<div class="faicon-widget">
+    {% include "django/forms/widgets/input.html" %}
+    <span class="icon faicon-add" data-id="id_{{widget.name}}">
+    {{icon_html}}
+    </span>
+    <span class="faicon-delete" {% if not widget.value %}style="display:none;"{% endif %}><i class="fas fa-times-circle" ></i> Remove Icon</span>
+    <span class="faicon-add" data-id="id_{{widget.name}}" rel="faicon-add" {% if widget.value %}style="display:none;"{% endif %}> <i class="fas fa-plus"></i> Add an Icon</span>
+</div>

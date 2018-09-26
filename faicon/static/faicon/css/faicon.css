@@ -1,0 +1,186 @@
+
+.faicon-widget .faicon-delete {
+    color:red;
+    margin-left: 20px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -20px;
+}
+
+.faicon-widget .faicon-add {
+    cursor: pointer;
+}
+
+.faicon-widget span[rel="faicon-add"] {
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.faicon-widget .icon {
+    display: inline-block;
+    cursor: pointer;
+    color: #495D63;
+}
+
+.faicon-widget input {
+    display: none;
+}
+
+.faicon-widget .icon:hover {
+ color: #94A4A9;
+}
+
+body.faicon-active {
+    overflow: hidden;
+}
+
+.faicon-screen {
+    display: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    height: 100%;
+    left: 0;
+    outline: none;
+    position: fixed;
+    -webkit-tap-highlight-color: transparent;
+    top: 0;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    width: 100%;
+    z-index: 99992;
+    opacity: 0.96;
+}
+
+.faicon-box {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+    overflow: auto;
+}
+
+.faicon-screen.show {
+    display: block;
+}
+
+.faicon-screen .title {
+    font-size: 28px;
+    color: #495D63;
+}
+
+.faicon-screen .version {
+    color:silver;
+    font-size: 11px;
+}
+
+.faicon-screen .faicon-header {
+    margin-top: 20px;
+}
+
+.faicon-screen .search {
+    font-size: 24px;
+    width: 220px;
+    float: left;
+    color: #495D63;
+    margin-top: 0;
+}
+
+.faicon-header {
+    overflow: auto;
+}
+
+.faicon-screen .faicon-content {
+    padding: 40px 10vw;
+    position:relative;
+    overflow: auto;
+}
+
+.faicon-screen .faicon-content .close {
+    top: 20px;
+    right: 20px;
+    color: #94A4A9;
+    position: absolute;
+    cursor: pointer;
+}
+
+.faicon-screen .faicon-content .close:hover {
+    color: #495D63;
+}
+
+.faicon-screen .list {
+    margin-left: 0;
+    padding-left: 0;
+    margin-top:20px;
+    overflow: auto;
+}
+
+.faicon-screen .list li {
+    float: left;
+    height: 66px;
+    width: 78px;
+    border-radius: 4px;
+    color: #94A4A9;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px 4px;
+    margin: 10px;
+    list-style:none;
+}
+
+#faicon-style-select {
+    color: #495D63;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.faicon-screen .list li .label {
+    font-size: 11px;
+    line-height: 12px;
+    display: block;
+    margin-top:8px;
+}
+
+.faicon-screen .list li:hover {
+    background-color: #F7F7F7;
+    color: #495D63;
+}
+
+.faicon-screen .pagination {
+    display: block;
+    margin-top: 20px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.faicon-screen .pagination li {
+  float: left;
+  padding:5px;
+  font-size: 20px;
+  color: #94A4A9;
+  border-radius: 4px;
+  margin-right: 8px;
+  list-style: none;
+}
+.faicon-screen .pagination li.disabled a {
+    cursor: default;
+    color: silver;
+}
+
+.faicon-screen .pagination li.active, .faicon-screen .pagination li.active:hover {
+    background-color: #495D63;
+
+}
+
+.faicon-screen .pagination li.active a, .faicon-screen .pagination li.active:hover a {
+    color: #fff !important;
+}
+
+.faicon-screen .pagination li:hover {
+    background-color: #F7F7F7;
+    color: #495D63;
+}

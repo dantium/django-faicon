@@ -1,0 +1,28 @@
+{% load faicon i18n %}
+
+{% if icon_list %}
+<div class="faicon-screen">
+    <div class="faicon-box">
+        <div class="faicon-content" id="faicon-list">
+            <i class="close fas fa-times-circle fa-3x"></i>
+            <div class="title">{% trans "Icon Picker" %}</div>
+            <div class="version">{{fa_version}}</div>
+            <div class="faicon-header">
+                <input class="search" placeholder="Search " />
+                <select name="style" id="faicon-style-select">
+                    <option value="">{% trans "Filter by Style" %}</option>
+
+                </select>
+            </div>
+            <ul class="list">
+            {% for key, icon in icon_list.items %}
+                {% for style in icon.styles  %}
+                    {% faicon_admin_icon key style icon.label icon.search.terms 'fa-3x' %}
+                {% endfor %}
+            {% endfor %}
+            </ul>
+            <ul class="pagination"></ul>
+        </div>
+    </div>
+</div>
+{% endif %}
