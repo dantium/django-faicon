@@ -8,10 +8,10 @@ with open("README.md", "r") as fh:
 
 setup(
     name="django-faicon",
-    version="0.1",
+    version="0.1.0",
     author="Dan Atkinson",
     author_email="dan@danatkinson.com",
-    description="Add a fontawesome Icon field to a Django model",
+    description="Django Font Awesome 5 icon picker",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/dantium/django-faicon",
