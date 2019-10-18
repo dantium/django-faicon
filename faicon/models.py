@@ -19,7 +19,7 @@ def get_icon_list():
             "Faicon - can't find {}, \
             check FAICON_YAML_FILE setting.".format(YAML_FILE)
         )
-    with open(file, 'r') as stream:
+    with open(file, 'r', encoding='utf-8') as stream:
         data_loaded = yaml.load(stream)
     return data_loaded
 
