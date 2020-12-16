@@ -20,7 +20,7 @@ def get_icon_list():
             check FAICON_YAML_FILE setting.".format(YAML_FILE)
         )
     with open(file, 'r') as stream:
-        data_loaded = yaml.load(stream)
+        data_loaded = yaml.safe_load(stream)
     return data_loaded
 
 
