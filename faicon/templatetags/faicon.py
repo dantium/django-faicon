@@ -18,6 +18,7 @@ ICON_STYLES = {
     'solid': 'fas',
     'regular': 'far',
     'light': 'fal',
+    'thin': 'fat,
     'brands': 'fab',
 }
 
