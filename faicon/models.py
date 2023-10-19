@@ -9,7 +9,7 @@ YAML_FILE = getattr(
     'FAICON_YAML_FILE',
     'fontawesome/metadata/icons.yml'
 )
-FA_CSS = getattr(settings, 'FAICON_CSS_URL', 'fontawesome/css/all.css')
+FA_CSS = getattr(settings, 'FAICON_CSS_URL', 'https://kit.fontawesome.com/e4e0ebd72f.css')
 
 
 def get_icon_list():
